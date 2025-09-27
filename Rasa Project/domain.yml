@@ -1,0 +1,109 @@
+version: "3.1"
+
+intents:
+  - greet
+  - name_entry
+  - thanks
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - wellbeing
+  - self_employment
+  - work_interference
+  - company_no_employees
+  - tech_company
+  - health_benefits
+  - health_resources
+  - discussing_mind_health
+  - willing_to_discuss_collegaue
+
+actions:
+  - action_hello_world
+  
+entities:
+  - name
+  
+slots:
+  name:
+    type: list
+    mappings:
+    - type: custom
+
+
+responses:
+  utter_greet:
+  - text: "Hey!"
+  
+  utter_survey:
+  - text: "Would you like to go through a mind check up survey with me? Don't worry, what happens in AI, stays in AI!"
+  
+  utter_mood:
+  - text: "Hey, tell me about yourself. How are you today?"
+  
+  utter_employment:
+  - text: "Are you self-employed?"
+  
+  utter_work_interference:
+  - text: "Do you feel anyone interfering with your work?"
+  
+  utter_company_no_employees:
+  - text: "How many employees does your company or organization have?"
+  
+  utter_tech_company:
+  - text: "Is your employer primarily a tech company/organization?"
+  
+  utter_health_benefits:
+  - text: "Does your employer provide mind check up as a benefit?"
+  
+  utter_health_resources:
+  - text: "Do you know the options for mind check up your employer provides?"
+  
+  utter_discussing_mind_health:
+  - text: "Do you think that discussing a mind health issues with your employer would have negative consequences?"
+  
+  utter_willing_to_discuss_collegaue:
+  - text: "Would you be willing to discuss a mind health issue with your coworkers?"
+  
+  utter_willing_to_discuss_employer:
+  - text: "Would you bring up a mind health issue with a potential employer in an interview?"
+
+  utter_serious_mind_health:
+  - text: "Do you feel that your employer takes mind health as seriously as physical health?"
+
+  utter_negative_consequences_mind_coworker:
+  - text: "Have you heard of or observed negative consequences for coworkers with mind health conditions in your workplace?"
+
+  utter_willing_to_discuss_friend:
+  - text: "Would you bring up a mind health issue with a potential friend in a chat?"
+
+  utter_willing_to_discuss_family_member:
+  - text: "Would you bring up a mind health issue with a potential family_member in a chat?"
+  
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+    
+  utter_cheer_up_two:
+  - text: "Maybe you should study at PUC MINAS and find new ideas, it always helps!"
+  
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "GoodBye, take care! Hope To See You Soon !\nJust Type 'hey' or 'hi' anytime again to redirect to the main bot plot !"
+
+  utter_iamabot:
+  - text: "I am a friendly mind health chat bot, your start point of finding yourself."
+  
+  utter_welcome:
+  - text: "Great! \nJust type 'hey' or 'hi' again to redirect to the main bot plot !"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

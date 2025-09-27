@@ -1,0 +1,215 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good bye
+    - ee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you an AI system?
+    - are you mr. robot?
+    
+- intent: name_entry
+  examples: |
+    - My name is [Jefferson](name)
+    - [jefferson](name:Jefferson) this side
+    - It's [jefferson](name:Jefferson)
+    - [giselle](name:Giselle) is my name
+    - [Giselle](name)
+    - [Carlos](name)
+    - [carlos](name:Carlos)
+    - My name is [Andre](name)
+    - [andre](name:Andre) this side
+    - It's [anne](name:Anne)
+    - [camila](name:Camila) is my name
+    - [Maria](name)
+    - [Rafel](name)
+    - [maria](name:Maria)
+    - It is [Joao](name)
+    - My name is [Joao](name)
+    - my name is [Pedro](name)
+    - name is [Melissa](name)
+    - my name is [demo](name)
+    - name is [demo](name)
+    - I am [Natalia](name)
+    - I am [Livia](name)
+    - I am [demo](name)
+    - myself [Leandro](name)
+    - myself [demo](name)    
+    
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot 
+    - thank you so much    
+    
+- intent: wellbeing
+  examples: |
+    - I am not feeling well
+    - i am unwell
+    - I do not feel well today
+    
+- intent: self_employment
+  examples: |
+    - Yes I work to myself
+    - yes i am my own boss
+    - yup
+    - not really I am not self employed
+    - nope i am not the boss
+    
+- intent: work_interference
+  examples: |
+    - often
+    - sometimes
+    - rarely 
+    - never
+    - smtime
+    - smtimes
+    
+- intent: company_no_employees
+  examples: |
+    - up to 50
+    - more than 100
+    - about 100
+    - big 
+    - small
+    - less
+    - a lot
+    - many
+    - little
+    
+- intent: tech_company
+  examples: |
+    - yes it is a tech company
+    - dead right, tech company
+    - right on, working at a tech giant
+    - yup tech it is
+    - no it isnt a tech company
+    - not really, not a tech company
+    
+- intent: health_benefits
+  examples: |
+    - yes they do
+    - yeah they do
+    - sure, my company does
+    - yup where i work i have it all
+    - no not for me
+    - nope, no health benefits
+    - I have to double check that
+    
+- intent: health_resources
+  examples: |
+    - yes a lot
+    - yeah aware of the options
+    - yup i know them
+    - no i am not aware of provided health resources
+    - not many health resources
+    - unaware
+    - not sure if they do
+    
+- intent: discussing_mind_health
+  examples: |
+    - yes it will sound strange
+    - yeah they may ask me to take unpaid leave
+    - yes that would be tricky
+    - yup they might think i cant handle my work
+    - no i dont think it would affect my job
+    - nope it wont cause any consequences
+    - not sure about it 
+    
+- intent: willing_to_discuss_collegaue
+  examples: |
+    - yes i think i should
+    - yeah i guess so
+    - yes i will be willing to discuss
+    - yup i will discuss
+    - no i wont
+    - nope what will they think of me
+    - not sure, i am not sure if i would
+    - some of them i might share    
+    
+
+
